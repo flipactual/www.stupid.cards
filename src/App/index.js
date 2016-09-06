@@ -105,7 +105,7 @@ export default class App extends Component {
   }
   @autobind
   handleClick() {
-
+    this.resetCards();
   }
   render() {
     return (
