@@ -50,8 +50,7 @@ export default class App extends Component {
       width: '100%',
     },
     MinorArcana: {
-      borderTop: '1px solid #E7E7E7',
-      backgroundColor: '#FAFAFA',
+      borderTop: '2px solid #E7E7E7',
     },
   }
   static initialState = {

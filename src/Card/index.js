@@ -20,7 +20,7 @@ export default class Card extends Component {
     },
     MajorCardName: {
       fontSize: '1.5rem',
-      fontWeight: 500,
+      fontWeight: 600,
     },
   }
   static propTypes = {

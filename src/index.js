@@ -11,5 +11,8 @@ render(
   document.getElementsByTagName('main')[0]
 );
 
-/* eslint-disable no-console */
-console.log('%c🃏', 'font-size: 64px;');
+/* eslint-disable no-console, max-len */
+setTimeout(() => {
+  console.log('%cCome on let’s get this psychic junk over with!', 'font-weight: bold;');
+  console.log('%chttps://www.flipactual.com', 'font-weight: bold;');
+}, 1000);
