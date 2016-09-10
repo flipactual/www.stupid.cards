@@ -1,15 +1,10 @@
-import React from 'react';
-import {
-  render,
-} from 'react-dom';
+import StupidCards from './StupidCards';
 
 import './reset.css';
-import App from './App';
+import './global.css';
 
-render(
-  <App />,
-  document.getElementsByTagName('main')[0]
-);
+const app = new StupidCards();
+app.reset();
 
 /* eslint-disable no-console, max-len */
 setTimeout(() => {

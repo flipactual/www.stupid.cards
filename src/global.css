@@ -1,0 +1,60 @@
+body {
+  color: rgb(35, 38, 41);
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.StupidCards {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Arcana {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 0px 1.5rem;
+  width: 100%;
+}
+
+.MinorArcana {
+  border-top: 2px solid rgb(231, 231, 231);
+}
+
+.Card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MajorArcana .Card {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.MinorArcana .Card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 33.33%;
+}
+
+.CardName {
+  font-size: 1.5rem;
+  font-weight: 600;
+}

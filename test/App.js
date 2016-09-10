@@ -1,26 +1,26 @@
 import test from 'ava';
-import {
-  findDOMNode,
-} from 'react-dom';
-import { Simulate } from 'react-addons-test-utils';
 import './helpers/dom';
-import getApp from './helpers/getApp';
 
-test.beforeEach(async t => {
-  t.context.app = getApp();
+import StupidCards from '../src/StupidCards';
+
+test.beforeEach(t => {
+  t.context.app = new StupidCards();
+  t.context.app.reset();
 });
 
-test.afterEach.always(async t => {
+test.afterEach.always(t => {
   delete t.context.app;
 });
 
 test('Renders App', t => {
   t.plan(1);
-  t.is(findDOMNode(t.context.app).className, 'App');
+  t.is(document.getElementsByClassName('StupidCards').length, 1);
 });
 
 test('Resets App', t => {
   t.plan(1);
-  Simulate.click(findDOMNode(t.context.app));
-  t.pass();
+  const pre = t.context.app.draws;
+  document.getElementsByClassName('StupidCards')[0].click();
+  const post = t.context.app.draws;
+  t.notDeepEqual(pre, post);
 });

@@ -2,14 +2,13 @@ parser: babel-eslint
 plugins:
   - ava
 extends:
-  - airbnb
+  - airbnb-base
   - plugin:ava/recommended
 parserOptions:
   ecmaVersion: 6
   sourceType: module
   ecmaFeatures:
     experimentalObjectRestSpread: true
-    jsx: true
 env:
   browser: true
 rules:
