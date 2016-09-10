@@ -13,6 +13,6 @@ render(
 
 /* eslint-disable no-console, max-len */
 setTimeout(() => {
-  console.log('%cCome on let’s get this psychic junk over with!', 'font-weight: bold;');
+  console.log('%cDivination has never been simpler!', 'font-weight: bold;');
   console.log('%chttps://www.flipactual.com', 'font-weight: bold;');
 }, 1000);
